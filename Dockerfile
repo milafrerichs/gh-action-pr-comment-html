@@ -1,5 +1,7 @@
 FROM ruby:2.7-alpine
 
+RUN apk add --no-cache build-base
+
 LABEL "com.github.actions.name"="PR Comment"
 LABEL "com.github.actions.description"="Leaves a comment on an open PR based on the contents of a file."
 LABEL "com.github.actions.repository"="https://github.com/milafrerichs/pr-comment-html-body"
