@@ -1,0 +1,17 @@
+name: PR Comment from HTML file
+author: Mila Frerichs
+description: Leaves a comment on an open PR based on the contents of a file.
+branding:
+  icon: 'message-square'
+  color: 'black'
+inputs:
+  path:
+    description: html file path
+    required: true
+  html_path:
+    required: false
+    description: the xpath to the element you want
+    default: "body"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
